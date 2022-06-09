@@ -39,7 +39,7 @@ var getEquationOverlay = () => {
 var tick = (elapsedTime, multiplier) => {
     let dt = BigNumber.from(elapsedTime * multiplier);
     let bonus = theory.publicationMultiplier;
-    if (accPress) TickPress += dt;
+    if (accPress) TickPress += 999;
     if (!accPress) TickPress -= 4 * dt;
     if (TickPress <= 0) TickPress = 0;
     value = 1;
