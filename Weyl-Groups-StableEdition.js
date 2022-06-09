@@ -414,7 +414,7 @@ var init = () =>
     {
         // buffer popup
         bufferPopup = ui.createPopup({
-            title: "Letter auto-buyer", // todo : localize
+            title: "Letter aqto-buyer", // todo : localize
             content: ui.createStackLayout({
                 children: [
                     ui.createFrame({
@@ -648,7 +648,7 @@ var tick = (elapsedTime, multiplier) => {
         let dt = BigNumber.from(elapsedTime * multiplier);
         let bonus = theory.publicationMultiplier;
         q += dt * getQ1(q1.level) * getQ2(q2.level) * getQ3(q3.level) / BigNumber.TEN;
-        currency.value += dt * bonus * q * BigNumber.TWO.pow(group.word.length);
+        currency.value += dt * bonus * q *BigNumber.from(1e50).pow(group.word.length);
 
         theory.invalidateTertiaryEquation();
     }
