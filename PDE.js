@@ -1,5 +1,5 @@
 /*----------
-v1:release
+v1:releaseeeeeeeee
 v1.1: bug fix / added dr / drho
 HAVE SOME BUG. I WILL FIX IT
 ----------*/
@@ -110,10 +110,10 @@ var init = () => {
     
     acS1 = theory.createAchievementCategory(10, "Luck (Others)");
     theory.createAchievement(5000, acS1, "Lucky", "you have 1/500 chance (sec) to get this achievement", () => Math.random() <= (1 / 500));
-    //theory.createAchievement(5001, acS1, "Super Luck", "you have 1/5000 chance (sec) to get this achievement", () => Math.random() <= (1 / 5000));
+    theory.createAchievement(5001, acS1, "Super Luck", "you have 1/5000 chance (sec) to get this achievement", () => Math.random() <= (1 / 5000));
     theory.createAchievement(5002, acS1, "Ultra Luck", "you have 1/10000 chance (sec) to get this achievement", () => Math.random() <= (1 / 10000));
     theory.createAchievement(5003, acS1, "ULTRA SUPER luck", "you have 1/1000000 chance (sec) to get this achievement", () => Math.random() <= (1 / 1000000));
-    //theory.createAchievement(5005, acS1, "ok, you win", "you have 1/1b chance (sec) to get this achievement", () => Math.random() <= (1 / 1000000000));
+    theory.createAchievement(5005, acS1, "ok, you win", "you have 1/1b chance (sec) to get this achievement", () => Math.random() <= (1 / 1000000000));
     
     ///////////////////////
     //// Milestone Upgrades
@@ -285,7 +285,7 @@ var getSecondaryEquation = () => {
 
 var getTertiaryEquation = () => theory.latexSymbol + "=\\max\\rho^{0.1} \\qquad u =" + BigNumber.from(U) + " \\qquad \\dot{\\rho} = " + drho;
 
-var getPublicationMultiplier = (tau) => tau.pow(1.96) / BigNumber.TEN * BigNumber.from(1 + pubM.level / 4);
+var getPublicationMultiplier = (tau) => tau.pow(196) / BigNumber.TEN * BigNumber.from(1 + pubM.level / 4);
 var getPublicationMultiplierFormula = (symbol) => "\\frac{{" + symbol + "}^{1.96}}{10} \\times " + (1 + pubM.level / 10);
 var getTau = () => currency.value.pow(0.1);
 var get2DGraphValue = () => currency.value.sign * (BigNumber.ONE + currency.value.abs()).log10().toNumber();
