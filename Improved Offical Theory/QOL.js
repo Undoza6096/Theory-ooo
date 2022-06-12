@@ -1,6 +1,6 @@
 
-var id = "eaux_qol";
-var name = "QoL Theory";
+var id = "eaux_qol2";
+var name = "QoL Theory 2";
 var description = "A custom theory for finer main theory auto-purchase controls and heuristic-based star/student reallocation";
 var authors = "Eaux Tacous#1021, Pro by sky";
 var version = "2.02 Pro Edition";
